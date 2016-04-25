@@ -8,7 +8,10 @@ body {
                 font-size: 1.5em;
                 font-weight: bold;
             }
-            [id=all-contents] {
+            h1 {
+                margin: 10px;
+            }
+            #all-contents {
                 max-width: 800px;
                 margin: auto;
             }
@@ -17,7 +20,6 @@ body {
             nav {
                 background: rgb(26, 138, 153);
                 margin: 0 auto;
-                margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
                 border: 2px solid;
@@ -43,20 +45,32 @@ body {
 
             /* main container area beneath menu */
             main {
-                background: rgb(255, 255, 255);
+                background: rgb(245, 238, 219);
                 display: flex;
             }
-            [class=sidebar] {
-                margin-right: 25px;
-                padding: 10px;
-            }
-            [class=sidebar] img {
-                width: 200px;
-            }
-            [class=content] {
+            .content {
                 flex: 1;
                 padding: 15px;
             }
-            [class=interests] header {
-                font-size: 1.25em;
+
+            /* portfolio styles */
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            #portfolio li:hover {
+                background: #eee;
+            } 
+
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
             }
